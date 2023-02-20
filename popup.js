@@ -1,9 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('container');
   
-    const copyButton = createButton('Copy to Clipboard');
-    container.appendChild(copyButton);
-  
     const yyyy_mm_dd_button = createButton('yyyy/mm/dd', 'yyyy-mm-dd');
     container.appendChild(yyyy_mm_dd_button);
   
@@ -20,24 +17,20 @@ document.addEventListener('DOMContentLoaded', () => {
       const today = getTodaysDate('yyyy/mm/dd');
       copyToClipboard(today);
     });
-  
-    yyyy_mm_dd_kanji_button.addEventListener('click', () => {
-      const today = getTodaysDate('yyyy年mm月dd日');
+
+    yyyy_mm_button.addEventListener('click', () => {
+      const today = getTodaysDate('yyyy/mm');
       copyToClipboard(today);
     });
+
   
     mm_dd_button.addEventListener('click', () => {
       const today = getTodaysDate('mm/dd');
       copyToClipboard(today);
     });
-  
-    yyyy_mm_button.addEventListener('click', () => {
-      const today = getTodaysDate('yyyy/mm');
-      copyToClipboard(today);
-    });
-  
-    copyButton.addEventListener('click', () => {
-      const today = getTodaysDate('yyyy/mm/dd');
+
+    yyyy_mm_dd_kanji_button.addEventListener('click', () => {
+      const today = getTodaysDate('yyyy年mm月dd日');
       copyToClipboard(today);
     });
   

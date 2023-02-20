@@ -4,6 +4,7 @@ html, body {
   }
   
   .button {
+    min-width: 130px;
     margin: 5px;
     padding: 5px;
     background-color: #1E1E1E;
