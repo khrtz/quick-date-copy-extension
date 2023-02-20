@@ -1,0 +1,15 @@
+{
+    "name": "quick-date-copy-extension",
+    "description": "Copy today's date to the clipboard",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["clipboardWrite"],
+    "background": {
+        "service_worker": "background-sw.js"
+    },
+    "action": {
+      "default_title": "Today's Date",
+      "default_popup": "popup.html"
+    }
+  }
+  

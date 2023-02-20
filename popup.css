@@ -1,0 +1,21 @@
+html, body {
+    background-color: #303030;
+    color: white;
+  }
+  
+  .button {
+    margin: 5px;
+    padding: 5px;
+    background-color: #1E1E1E;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #333;
+  }
+
+  .button:active {
+    background-color: #555;
+  }
